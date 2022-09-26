@@ -1,0 +1,130 @@
+.container{
+    border: 1px solid white;
+    width: 1440px;
+    height: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color:hsl(32, 50%, 90%);
+}
+body{
+    font-size: 14px;
+}
+.sub-container{
+    margin: 0 auto;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    max-width: 960px;
+    min-width: 500px;
+    width: 47%;
+    height: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.child1,.child2{
+    /* border: 1px solid black; */
+    width: 50%;
+}
+.child2{
+    border-top-right-radius: 1.1rem;
+    border-bottom-right-radius: 1.1rem;
+    background-color: #fff;
+}
+.block{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1.1rem;
+    border-bottom-left-radius: 1.1rem;
+}
+.width{
+    /* border: 1px solid black; */
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2rem
+}
+p.size1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: .35rem;
+    font-weight: 500,700;
+    color: gray;
+}
+h1.size2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-family: 'Fraunces', serif;
+    color: rgba(0, 0, 0, 0.92);
+}
+p.size3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.65rem;
+    color: rgb(126, 124, 124);
+}
+h1.size4{
+    width: 42%;
+    margin-left: 2.5rem;
+    font-family: 'Fraunces', serif;
+    font-size: 2.2rem;
+    display: inline-block;
+    color: hsl(158, 36%, 37%);
+}
+p.size5{
+    width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-left: 1.2rem;
+    color: gray;
+}
+.cart{
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 1.08rem;
+    color: aliceblue;
+    padding: 0;
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 0 auto;
+}
+.cart-color{
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem .1rem;
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+}
+.image2{
+    display: none;
+}
+
+/* mobile design */
+
+@media (max-width:430px){
+    .sub-container{
+        margin: 0 auto;
+        width: 55%;
+        height: 65%;
+        margin: 2rem 2rem;
+        /* margin-right: 2rem; */
+        flex-direction: column;
+    }
+    .image1{
+        display: none;
+    }
+    .image2{
+        display: block;
+        width: 95%;
+    }
+    .child1{
+        border-top-right-radius: 1.1rem;
+        border-top-left-radius: 1.1rem;
+    }
+    .child2{
+        padding-bottom: 2rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.1rem;
+        width: 47.54%;
+    }
+    h1.size4{
+        margin-left: 3.5rem;
+    }
+}
