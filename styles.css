@@ -113,6 +113,8 @@ p.size5{
     .image2{
         display: block;
         width: 95%;
+        border-top-left-radius: 1.1rem;
+        border-top-right-radius: 1.1rem;
     }
     .child1{
         border-top-right-radius: 1.1rem;
